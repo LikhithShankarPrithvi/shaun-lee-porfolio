@@ -16,19 +16,8 @@ const Home = () => {
 	return (
 		// Main Section
 		<div className='flex justify-center shadow shadow-white m-3 py-5 '>
-			{/* <div className='hidden md:flex text-white '>
-				<div className='flex flex-col justify-center'>
-					Likhith Shankar
-				</div>
-			</div> */}
 			{/* container for main section */}
 			<div className='flex flex-col  item-center md:justify-evenly text-white m-3 mt-0 py-5 md:p-5 font-md'>
-				{/* <div className='md:hidden text-white font-bold flex justify-center ml-4 pb-10 '>
-					<div className='text-4xl'>
-						Welcome to Likhith Shankar Portfolio
-					</div>
-				</div> */}
-
 				{/* Container for Image& Text */}
 				<div className='flex flex-col md:flex-row justify-between  md:pb-0'>
 					{/* container for Im a developer Text */}
@@ -40,30 +29,19 @@ const Home = () => {
 						</div>
 						{/* Slider Section  */}
 						<div className='flex flex-col md:flex-row mt-4'>
-							{/* <div className='md:hidden font-bold text-xl md:text-2xl pb-3'>
-								I'm a
-							</div> */}
 							<div className='flex flex-col overflow-hidden h-[65px]'>
 								<div className='animate-[slider_8s_ease-in-out_infinite_alternate] h-100% [&>*]:h-[65px] '>
-									{/* <div className=''> */}
-									<div className='font-bold text-xl md:text-2xl lg:text-4xl'>
-										FullStack Developer
-									</div>
-									<div className='font-bold text-xl md:text-2xl lg:text-4xl'>
-										FrontEnd Developer
-									</div>
-									<div className='font-bold text-xl md:text-2xl lg:text-4xl'>
-										BackEnd Developer
-									</div>
-									<div className='font-bold text-xl md:text-2xl lg:text-4xl'>
-										Video Editor
-									</div>
+									{titles.map((item, id) => (
+										<div className='font-bold text-xl md:text-2xl lg:text-4xl'>
+											{item}
+										</div>
+									))}
 								</div>
 							</div>
 						</div>
 						<div className='relative'>
 							<img
-								src={require('../Images/dp3.jpg')}
+								src={require('../Images/dp2.png')}
 								alt=''
 								className='pl-[45%] md:hidden max-h-40 object-fit right-0 bottom-0'
 							/>
