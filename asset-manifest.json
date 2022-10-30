@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/shaun-lee-portfolio/static/css/main.d0b257cb.css",
+    "main.js": "/shaun-lee-portfolio/static/js/main.04e33ef7.js",
+    "static/media/FreshersIntro.png": "/shaun-lee-portfolio/static/media/FreshersIntro.6afb46851f7c320f0985.png",
+    "static/media/displayPicture.jpg": "/shaun-lee-portfolio/static/media/displayPicture.1ebe74c48de544e1125a.jpg",
+    "static/media/culturalClubPromo.jpg": "/shaun-lee-portfolio/static/media/culturalClubPromo.aefd64873294c9c12525.jpg",
+    "static/media/FreshersBootcamp.jpg": "/shaun-lee-portfolio/static/media/FreshersBootcamp.e01db31c28a570e46d30.jpg",
+    "static/media/TalentsDay.png": "/shaun-lee-portfolio/static/media/TalentsDay.c745b6c4cf0f763d649b.png",
+    "static/media/campusTourSVUCE.jpg": "/shaun-lee-portfolio/static/media/campusTourSVUCE.07c47278606235619544.jpg",
+    "static/media/cynosureTeaser.jpg": "/shaun-lee-portfolio/static/media/cynosureTeaser.0f4df6c49a465fa6e2e8.jpg",
+    "static/media/canva.png": "/shaun-lee-portfolio/static/media/canva.a3e24cb6c04717fa8e66.png",
+    "index.html": "/shaun-lee-portfolio/index.html",
+    "main.d0b257cb.css.map": "/shaun-lee-portfolio/static/css/main.d0b257cb.css.map",
+    "main.04e33ef7.js.map": "/shaun-lee-portfolio/static/js/main.04e33ef7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0b257cb.css",
+    "static/js/main.04e33ef7.js"
+  ]
+}
