@@ -91,7 +91,10 @@ const Experience = () => {
 				</h1>
 				<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-2 lg:px-32'>
 					{extraWorkInfo.map((item, id) => (
-						<div className=' mb-2 shadow-md shadow-slate-300 hover:shadow-slate-600'>
+						<div
+							key={id}
+							className=' mb-2 shadow-md shadow-slate-300 hover:shadow-slate-600'
+						>
 							<div className=' p-3'>
 								<h1 className='text-sm opacity-40'>
 									{item.years}
@@ -108,8 +111,8 @@ const Experience = () => {
 									{item.place}
 								</h1>
 								<div className='flex flex-col mt-6'>
-									{item.desc.map((desc, id) => (
-										<h1 className='text-sm  mb-2'>
+									{item.desc.map((desc, id2) => (
+										<h1 key={id2} className='text-sm  mb-2'>
 											{desc}
 										</h1>
 									))}

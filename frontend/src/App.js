@@ -11,7 +11,7 @@ import Profiles from './components/Profiles'
 
 const App = () => {
 	return (
-		<body>
+		<>
 			<Header />
 			<Routes>
 				<Route path='/' element={<Home />} />
@@ -22,7 +22,7 @@ const App = () => {
 				<Route path='/profiles' element={<Profiles />} />
 			</Routes>
 			<Footer />
-		</body>
+		</>
 	)
 }
 

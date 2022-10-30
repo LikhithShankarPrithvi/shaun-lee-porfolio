@@ -90,7 +90,10 @@ const Projects = () => {
 				</h1>
 				<div className='grid md:grid-cols-2 gap-5 lg:grid-cols-3 p-3 md:p-6 md:pb-0'>
 					{projectList.map((item, id) => (
-						<div className='shadow-sm shadow-white flex flex-col justify-between p-2 hover:shadow-slate-600'>
+						<div
+							key={id}
+							className='shadow-sm shadow-white flex flex-col justify-between p-2 hover:shadow-slate-600'
+						>
 							<div className='p-2'>
 								<h1 className='text-2xl font-bold '>
 									{item.name}
@@ -100,7 +103,10 @@ const Projects = () => {
 								</p>
 								<div className='grid grid-rows-2 grid-cols-3 text-sm'>
 									{item.skills.map((item2, id2) => (
-										<h1 className='mr-5 py-1 hover:bg-white hover:text-black'>
+										<h1
+											key={id2}
+											className='mr-5 py-1 hover:bg-white hover:text-black'
+										>
 											{/* <GoPrimitiveDot className='pt-2' /> */}
 											{item2}
 										</h1>
@@ -140,7 +146,10 @@ const Projects = () => {
 				</h1>
 				<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-3 md:p-6'>
 					{videoProjectsList.map((item, id) => (
-						<div className='shadow-sm shadow-white relative group md:m-3'>
+						<div
+							key={id}
+							className='shadow-sm shadow-white relative group md:m-3'
+						>
 							<img
 								src={require(`../Images/videoProjectImages/${item.image}`)}
 								alt={item.name}

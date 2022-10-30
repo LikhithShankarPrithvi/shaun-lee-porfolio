@@ -7,7 +7,7 @@ import Profiles from '../components/Profiles'
 import { FaCode } from 'react-icons/fa'
 
 const Home = () => {
-	console.log(window.screen.width)
+	// console.log(window.screen.width)
 
 	const titles = [
 		'FrontEnd Developer',
@@ -34,7 +34,10 @@ const Home = () => {
 							<div className='flex flex-col overflow-hidden h-[65px]'>
 								<div className='animate-[slider_8s_ease-in-out_infinite_alternate] h-100% [&>*]:h-[65px] '>
 									{titles.map((item, id) => (
-										<div className='font-bold text-xl md:text-2xl lg:text-4xl'>
+										<div
+											key={id}
+											className='font-bold text-xl md:text-2xl lg:text-4xl'
+										>
 											{item}
 										</div>
 									))}
@@ -85,7 +88,7 @@ const Home = () => {
 								&nbsp; &nbsp; Hola Amigos ! Welcome to my
 								portfolio👋.
 							</p>
-							<p className='mt-4 '>
+							<div className='mt-4 '>
 								<p>
 									I'm currently working on ETL, SDE at Wipro
 									Limited.
@@ -103,7 +106,7 @@ const Home = () => {
 										Video Editing - Passion/ Side Hustle
 									</li>
 								</p>
-							</p>
+							</div>
 							<p className='mt-4'>Open To Projects</p>
 							<p>
 								Check out my{' '}
@@ -138,27 +141,27 @@ const Home = () => {
 					</h1>
 					<div className='flex flex-col m-2 w-full'>
 						<a href='https://leetcode.com/LikhithShankarPrithvi/'>
-							<li class='hover:text-black hover:bg-white p-1'>
+							<li className='hover:text-black hover:bg-white p-1'>
 								Leetcode
 							</li>
 						</a>
 						<a href='https://www.hackerrank.com/likhithshankarp1'>
-							<li class='hover:text-black hover:bg-white  p-1'>
+							<li className='hover:text-black hover:bg-white  p-1'>
 								Hackerrank
 							</li>
 						</a>
 						<a href='https://www.interviewbit.com/profile/likhithshankarprithvi'>
-							<li class='hover:text-black hover:bg-white  p-1'>
+							<li className='hover:text-black hover:bg-white  p-1'>
 								InterviewBit
 							</li>
 						</a>
 						<a href='https://medium.com/@likhithshankarprithvi'>
-							<li class='hover:text-black hover:bg-white p-1'>
+							<li className='hover:text-black hover:bg-white p-1'>
 								Medium
 							</li>
 						</a>
 						<a href='https://open.spotify.com/user/317d6ttscq6afs6vcpdn6cyyno2y?si=38c0ecc05e074753'>
-							<li class='hover:text-black hover:bg-white p-1'>
+							<li className='hover:text-black hover:bg-white p-1'>
 								Spotify
 							</li>
 						</a>

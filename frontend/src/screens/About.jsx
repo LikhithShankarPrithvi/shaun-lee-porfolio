@@ -94,10 +94,13 @@ const About = () => {
 							Technical Skills
 						</h1>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4'>
-							{skills.map(name => (
-								<div className='flex hover:bg-slate-200 hover:text-black'>
+							{skills.map((name, id) => (
+								<div
+									key={id}
+									className='flex hover:bg-slate-200 hover:text-black'
+								>
 									<TiPointOfInterest className='mt-1 mr-3' />
-									<h1 className='text-xl md:text-lg'>
+									<h1 key={id} className='text-xl md:text-lg'>
 										{name}
 									</h1>
 								</div>

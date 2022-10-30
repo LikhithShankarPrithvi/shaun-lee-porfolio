@@ -37,8 +37,10 @@ const Header = () => {
 			>
 				<ul className=' absolute text-xl bg-black shadow-sm shadow-white text-white px-8 m-3 mt-20 z-50'>
 					{menuBar.map((item, id) => (
-						<Link to={item.link} onClick={handleClick}>
-							<li className='p-1'>{item.name}</li>
+						<Link key={id} to={item.link} onClick={handleClick}>
+							<li key={id} className='p-1'>
+								{item.name}
+							</li>
 						</Link>
 					))}
 				</ul>
@@ -54,8 +56,11 @@ const Header = () => {
 				</div>
 				<div className='hidden md:flex flex-row justify-between text-white md:[&>*]:px-3 [&>*]:px-4 [&>*]:cursor-pointer '>
 					{menuBar.map((item, id) => (
-						<Link to={item.link}>
-							<div className='hover:text-black hover:bg-white hover:shadow-sm hover:shadow-slate-600 rounded-md pb-1'>
+						<Link key={id} to={item.link}>
+							<div
+								key={id}
+								className='hover:text-black hover:bg-white hover:shadow-sm hover:shadow-slate-600 rounded-md pb-1'
+							>
 								{item.name}
 							</div>
 						</Link>
