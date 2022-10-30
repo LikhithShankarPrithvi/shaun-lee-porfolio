@@ -94,18 +94,18 @@ const Experience = () => {
 						<div className=' mb-2 shadow-md shadow-slate-300 hover:shadow-slate-600'>
 							<div className=' p-3'>
 								<h1 className='text-sm opacity-40'>
-									{item?.years}
+									{item.years}
 								</h1>
 								<div className='relative flex mt-4'>
 									<h1 className='font-extrabold text-lg'>
-										{item?.name}
+										{item.name}
 									</h1>
 									<h1 className='text-sm ml-2 mt-1.5'>
-										{item?.role}
+										{item.role}
 									</h1>
 								</div>
 								<h1 className='text-sm opacity-40'>
-									{item?.place}
+									{item.place}
 								</h1>
 								<div className='flex flex-col mt-6'>
 									{item.desc.map((desc, id) => (

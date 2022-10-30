@@ -98,9 +98,9 @@ const Projects = () => {
 								<p className='text-sm my-2 opacity-40'>
 									{item.desc}
 								</p>
-								<div className='grid grid-cols-3 md:flex text-sm'>
+								<div className='grid grid-rows-2 grid-cols-3 text-sm'>
 									{item.skills.map((item2, id2) => (
-										<h1 className='mr-5 py-1 flex flex-row hover:bg-white hover:text-black'>
+										<h1 className='mr-5 py-1 hover:bg-white hover:text-black'>
 											{/* <GoPrimitiveDot className='pt-2' /> */}
 											{item2}
 										</h1>

@@ -1,11 +1,6 @@
 import React from 'react'
 import { TiPointOfInterest } from 'react-icons/ti'
-import {
-	SiAdobepremierepro,
-	SiAdobephotoshop,
-	SiAdobeillustrator,
-	SiCanva,
-} from 'react-icons/si'
+
 import Education from '../components/Education'
 
 const About = () => {
@@ -45,25 +40,42 @@ const About = () => {
 			grade: '98%',
 		},
 	]
-	console.log(eduInfo)
 	return (
 		<>
 			{/* container for colonizing about section and skills section*/}
 			<div className='flex flex-col md:flex-row justify-center  text-white mt-5'>
 				{/* container for segregating about and education parts in about section*/}
-				<div className='flex flex-col m-3 md:w-5/12 '>
+				<div className='flex flex-col md:m-3 md:w-5/12 '>
 					{/* container for about section */}
-					<div className=' p-6 m-3 mb-4 '>
+					<div className=' p-6 pb-4 mb-0 m-3 '>
 						<h1 className='font-bold text-4xl pb-4'>About Me</h1>
-						<div className=''>
-							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I am a
-							constant learner and very enthusiastic for working
-							with new people and new technologies. I have good
-							problem solving skills. I am also into web
-							development. Currently i am exploring more into new
-							frameworks. I believe in team work.I am determined
-							to give my best at everything that I will be
-							assigned to.
+						<div className='text-sm'>
+							<p className=' '>
+								&nbsp; &nbsp; &nbsp; &nbsp; My career in
+								developement started as Frontend Developer.
+								While in my College, I have built several
+								webbpages using HTML and in quest for
+								improvisation came across learning CSS,
+								Javascript and Frameworks like ReactJS(Thanks to
+								Engineers behind Facebook). After working as a
+								freelancer, I've learnt how applications are
+								integrated in production level. Focussing more
+								on Full stack development I have learnt MERN
+								stack.
+							</p>
+							<p>
+								&nbsp; &nbsp; &nbsp; &nbsp; I am very good at
+								Python Programming, Used to practice Data
+								Structures and Algorithms and Coding challenges,
+								then focussed on Data science and machine
+								Learning applications using Python and its vast
+								set of libraries.
+							</p>
+							<p>
+								&nbsp; &nbsp; &nbsp; &nbsp; Now working on ETL,
+								POS Data Warehousing @Wipro. Actively looking
+								for Opportunities.
+							</p>
 						</div>
 					</div>
 					{/* container for Education section */}
@@ -140,6 +152,14 @@ const About = () => {
 							/>
 							<SiCanva size={50} className=' text-white ' /> */}
 						</div>
+					</div>
+					<div className='p-6 w-full'>
+						<h1 className='font-bold text-4xl'>Miselleneous</h1>
+						<p className='mt-4 '>
+							<li>Loves Coffee</li>
+							<li>Pop Music @ Spotify</li>
+							<li>Fan of CBM, Marvel Specifically.</li>
+						</p>
 					</div>
 				</div>
 			</div>

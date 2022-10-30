@@ -1,7 +1,10 @@
 import React from 'react'
 import { BsGithub, BsTwitter, BsInstagram, BsLinkedin } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
-import Sidebar from './Sidebar'
+import Sidebar from '../components/Sidebar'
+import Profiles from '../components/Profiles'
+
+import { FaCode } from 'react-icons/fa'
 
 const Home = () => {
 	console.log(window.screen.width)
@@ -12,7 +15,6 @@ const Home = () => {
 		'Full Stack Developer',
 		'Video Editor',
 	]
-	const title = titles[0]
 	return (
 		// Main Section
 		<div className='flex justify-center shadow shadow-white m-3 py-5 '>
@@ -41,7 +43,7 @@ const Home = () => {
 						</div>
 						<div className='relative'>
 							<img
-								src={require('../Images/dp2.png')}
+								src={require('../Images/displayPicture.jpg')}
 								alt=''
 								className='pl-[45%] md:hidden max-h-40 object-fit right-0 bottom-0'
 							/>
@@ -68,29 +70,99 @@ const Home = () => {
 				{/* My description */}
 				<div className='flex justify-end px-4 md:px-0 md:text-xl '>
 					<div className='md:mt-0 py-10 only:text-white font-lg md:max-w-2xl'>
-						<div>
-							<p>
-								Hola Amigos! Do you know the one thing that can
-								always thrive and can never be automated no
-								matter what ! Yes, You Guessed it - ART &
-								DESIGN. I'm into Web Design, Video Editing,
-								Photo-Art. Specialized in ReactJS, MERN &
-								Python-flask for Backend. Ardent &copy;Adobe
+						<div className='realtive'>
+							<FaCode className='absolute mt-1 ml-1' />
+							{/* <p>
+								&nbsp; &nbsp; Hola Amigos ! Do you know the one
+								thing that can always thrive and can never be
+								automated no matter what ! Yes, You Guessed it -
+								ART & DESIGN. I'm into Web Design, Video
+								Editing, Photo-Art. Specialized in ReactJS, MERN
+								& Python-flask for Backend. Ardent &copy;Adobe
 								Premiere Pro, Open for Projects.
+							</p> */}
+							<p>
+								&nbsp; &nbsp; Hola Amigos ! Welcome to my
+								portfolio👋.
+							</p>
+							<p className='mt-4 '>
+								<p>
+									I'm currently working on ETL, SDE at Wipro
+									Limited.
+								</p>
+								<p>
+									I'm a Full Stack Developer, Tech Stacks -
+									MERN & FReMP
+								</p>
+								<p>
+									My Interests Span:
+									<li>DSA - Coding</li>
+									<li>Object Oriented System Design</li>
+									<li>ML/ DL - Learning CS229</li>
+									<li>
+										Video Editing - Passion/ Side Hustle
+									</li>
+								</p>
+							</p>
+							<p className='mt-4'>Open To Projects</p>
+							<p>
+								Check out my{' '}
+								<Link to='/about'>
+									<u>About</u>
+								</Link>{' '}
+								section, Quick chat with me{' '}
+								<a href='https://topmate.io/likhith_shankar'>
+									<u>Here</u>
+								</a>
 							</p>
 						</div>
 					</div>
 				</div>
 
 				<div className='absolute flex flex-col md:relative md:flex md:flex-row pb-10 mb-4 justify-end mt-36 md:mt-4  '>
-					<button className='p-2 mx-5 mb-3 mt-8 md:mt-0 md:mx-10 md:mr-0 md:mb-0 border border-white text-white md:bg-white md:text-black rounded-sm min-w-[100px]'>
-						Resume
+					<button className='p-2 mx-5 mb-3 mt-8 md:mt-0 md:mx-10 md:mr-0 md:mb-0 border border-white text-white  hover:bg-black hover:text-white md:bg-white md:text-black rounded-sm min-w-[100px]'>
+						<a href='https://drive.google.com/file/d/1svsJ5NaJ3MfRyMFf5IlRwGTiEQUxC1rU/view?usp=share_link'>
+							Resume
+						</a>
 					</button>
 					<Link to='/contact'>
 						<button className='p-2 mx-5 md:mx-10 md:mr-0 md:mb-0 bg-white text-black rounded-sm min-w-[100px]  hover:bg-black hover:text-white hover:border hover:border-white'>
 							Contact
 						</button>
 					</Link>
+				</div>
+
+				<div className='flex flex-col mx-2 text-white md:hidden'>
+					<h1 className='m-2 text-2xl md:text-4xl font-bold'>
+						Profiles
+					</h1>
+					<div className='flex flex-col m-2 w-full'>
+						<a href='https://leetcode.com/LikhithShankarPrithvi/'>
+							<li class='hover:text-black hover:bg-white p-1'>
+								Leetcode
+							</li>
+						</a>
+						<a href='https://www.hackerrank.com/likhithshankarp1'>
+							<li class='hover:text-black hover:bg-white  p-1'>
+								Hackerrank
+							</li>
+						</a>
+						<a href='https://www.interviewbit.com/profile/likhithshankarprithvi'>
+							<li class='hover:text-black hover:bg-white  p-1'>
+								InterviewBit
+							</li>
+						</a>
+						<a href='https://medium.com/@likhithshankarprithvi'>
+							<li class='hover:text-black hover:bg-white p-1'>
+								Medium
+							</li>
+						</a>
+						<a href='https://open.spotify.com/user/317d6ttscq6afs6vcpdn6cyyno2y?si=38c0ecc05e074753'>
+							<li class='hover:text-black hover:bg-white p-1'>
+								Spotify
+							</li>
+						</a>
+					</div>
 				</div>
 				<div className='flex flex-row lg:hidden justify-center [&>*]:p-4'>
 					<a href='https://github.com/LikhithShankarPrithvi/'>
@@ -108,6 +180,7 @@ const Home = () => {
 				</div>
 			</div>
 			<Sidebar />
+			<Profiles className='hidden md:block' />
 		</div>
 	)
 }
