@@ -31,16 +31,18 @@
 			"react-app/jest"
 		]
 	},
-	"browser": {
-		"fs": false,
-		"path": false,
-		"os": false
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
 	},
-	"browserslist": [
-		">0.2%",
-		"not dead",
-		"not op_mini all"
-	],
 	"devDependencies": {
 		"autoprefixer": "^10.4.13",
 		"dotenv-webpack": "^8.0.1",
