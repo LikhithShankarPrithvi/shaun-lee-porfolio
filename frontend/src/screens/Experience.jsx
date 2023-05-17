@@ -10,9 +10,9 @@ const Experience = () => {
 			role: 'Project Engineer',
 			years: '08/2021-present',
 			desc: [
-				'Working on Retail Velocity (POS data integration ETL Tool). Ownership role for support and development of the system',
-				'Responsible for automated data transformation and data entry into the cloud.',
-				'Optimized the velocity server system by resolving several job scripting and scheduling conflicts which reduced the job span by over 75% and increased efficiency by over 50%.',
+				'Optimized the UI Code by re-architecting it into multiple smaller components while following Design Patterns, and SOLID Principles thereby decreasing the load time of UI by about 70 percent',
+				'Rearchitected the monolithic application to microservices following REST API guidelines',
+				'Developed and implemented ReactJS services to consume REST APIs, enhancing application functionality. - Python, ReactJS, System Design',
 			],
 		},
 		{

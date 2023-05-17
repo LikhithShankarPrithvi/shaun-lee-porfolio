@@ -11,11 +11,13 @@ const About = () => {
 		'MERN Stack',
 		'FReMP',
 		'Flask',
+		'Django',
+		'Java',
+		'C++',
 		'Git',
 		'OOPS',
 		'DSA',
-		'Java',
-		'C++',
+		'System Design',
 	]
 	const eduInfo = [
 		{
@@ -72,9 +74,9 @@ const About = () => {
 								set of libraries.
 							</p>
 							<p>
-								&nbsp; &nbsp; &nbsp; &nbsp; Now working on ETL,
-								POS Data Warehousing @Wipro. Actively looking
-								for Opportunities.
+								&nbsp; &nbsp; &nbsp; &nbsp; Now working as
+								Backend Dev @Wipro. Actively looking for
+								Opportunities.
 							</p>
 						</div>
 					</div>

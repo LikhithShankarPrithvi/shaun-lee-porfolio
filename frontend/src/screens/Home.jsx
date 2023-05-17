@@ -90,8 +90,8 @@ const Home = () => {
 							</p>
 							<div className='mt-4 '>
 								<p>
-									I'm currently working on ETL, SDE at Wipro
-									Limited.
+									I'm currently working as Backend Engineer at
+									Wipro.
 								</p>
 								<p>
 									I'm a Full Stack Developer, Tech Stacks -
@@ -99,7 +99,7 @@ const Home = () => {
 								</p>
 								<p>
 									My Interests Span:
-									<li>DSA - Coding</li>
+									<li>Writing Effective code </li>
 									<li>Object Oriented System Design</li>
 									<li>ML/ DL - Learning CS229</li>
 									<li>
